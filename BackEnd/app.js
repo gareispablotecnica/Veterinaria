@@ -13,7 +13,7 @@ const PORT=process.env.PORT || 5000;
 // ---> Utilizamos los Protocolos de Cors
 app.use(cors())
 // ---> Enviamos la base de datos como un Json (Archivo texto plano)
-app.use(express.json)
+app.use(express.json())
 
 app.use(PORT,()=>{
     console.log(`🚀 Servidor Corriendo en http:localhost:${PORT}`)
